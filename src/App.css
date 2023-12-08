@@ -5,6 +5,30 @@
   opacity: 1;
 }
 
-.purple-clr{
-  text-decoration: rgb(107, 8, 102);
+.purple-clr {
+  text-decoration: rgb(91, 25, 167);
 }
+
+.bg-mask {
+  background-image: url("./asserts//hero/bg-mask.svg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: right;
+}
+
+.brands-mask {
+  background-image: url("./asserts//hero//brands-mask.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: right;
+}
+
+.drop-shadow {
+  box-shadow: 0px 10px 50px #07070714;
+}
+
+.transparent-amazon{
+  background: transparent url("./asserts/hero/brands-LG.png") 0% 0% no-repeat
+    padding-box;
+}
+

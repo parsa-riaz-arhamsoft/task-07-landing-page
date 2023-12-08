@@ -13,7 +13,12 @@ module.exports = {
         "blue":"#1F0969",
         "yellow":"#FFC427",
         "t-blue":"#080D42",
-        "purple":"rgb(91, 25, 167)"
+        "purple":"rgb(91, 25, 167)",
+        "light-gray":"#707070"
+      },
+      theme:{
+        'xsm': {'max': '300px'},
+        // => @media (min-width: 640px and max-width: 767px) { ... }
       }
     },
   },
