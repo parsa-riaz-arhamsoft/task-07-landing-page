@@ -14,12 +14,11 @@ module.exports = {
         "yellow":"#FFC427",
         "t-blue":"#080D42",
         "purple":"rgb(91, 25, 167)",
-        "light-gray":"#707070"
+        "light-gray":"#707070",
+        "gray":"#DDDDDD",
+        "extl-gray":"#FAF9FE"
       },
-      theme:{
-        'xsm': {'max': '300px'},
-        // => @media (min-width: 640px and max-width: 767px) { ... }
-      }
+     
     },
   },
   plugins: [],

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logo from "../../asserts/logo.svg";
-import Navbar from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,43 +7,67 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed z-10 h-[4rem] lg:h-[4rem] 2xl:h-[5rem] w-full flex justify-center items-center overflow-hidden gradient text-white text-sm lg:text-base font-f-outfit">
-      <div className="h-[80%] w-[90%] container flex items-center justify-between">
-        <div className="w-1/2 md:w-1/4">
-          <img
-            src={logo}
-            alt="SSETS Rack logo"
-            className="h-full w-full object-contain"
-          />
-        </div>
-        <div className="lg:hidden">
-          {!isOpen ? (
-            <div className="text-[1.5rem]" onClick={() => setIsOpen(true)}>
-              <FontAwesomeIcon icon={faBars} />
-            </div>
-          ) : (
-            <div className="text-[1.5rem]" onClick={() => setIsOpen(false)}>
-              <FontAwesomeIcon icon={faClose} />
-            </div>
-          )}
-        </div>
-        <div
-          className={`gap-6 items-center lg:flex ${
-            isOpen
-              ? "flex flex-col absolute top-10 right-[-6%] w-[80%] md:w-[50%] z-50 h-auto border border-red-900 bg-white"
-              : "hidden"
-          }`}
-        >
-          <Navbar />
-          <div className="flex gap-2 text-black font-semibold">
-            <button className="bg-white py-2 px-4 rounded-sm hover:bg-yellow">
-              Create Account
-            </button>
-            <button className="bg-yellow py-2 px-4 rounded-sm">Sign in</button>
+    <header className="w-full h-full bg-gradient">
+      <nav className="text-white z-10 fixed top-0 w-full bg-white shadow-sm flex gradient h-[3.5rem] lg:h-[5rem] 2xl:h-[6rem] 2xl:px-4 justify-center items-center">
+        <div className="flex w-[90%] justify-between items-center">
+          <div className="h-[80%] w-[50%] md:w-[30%] lg:w-auto flex justify-between items-center">
+            <img
+              src={logo}
+              className="object-contain h-full w-full"
+              alt="Logo"
+            />
+          </div>
+          <div className="lg:hidden">
+            {!isOpen ? (
+              <div className="text-[1.5rem]" onClick={() => setIsOpen(true)}>
+                <FontAwesomeIcon icon={faBars} />
+              </div>
+            ) : (
+              <div className="text-[1.5rem]" onClick={() => setIsOpen(false)}>
+                <FontAwesomeIcon icon={faClose} />
+              </div>
+            )}
+          </div>
+          <div
+            className={`lg:w-auto lg:grid lg:static  absolute z-10 top-[100%] bg-yellow lg:bg-transparent text-d-blue lg:text-white  h-[30rem] right-0 w-[80%]  rounded-l-lg md:h-auto ${
+              isOpen ? "visible" : "hidden"
+            }`}
+          >
+            <ul className="h-full  2xl:text-2xl justify-evenly  flex flex-col md:text-navy md:flex-row gap-4 items-center md:justify-center font-semibold">
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Home
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Review
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Features
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Benefits
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Pricing
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Faqs
+              </li>
+              <li className="px-2 hover:underline underline-offset-8 decoration-2 decoration-purple hover:-translate-y-1">
+                Contact
+              </li>
+              <div className="flex flex-col lg:flex-row gap-2 text-black font-bold">
+                <button className="bg-white py-2 px-4 rounded hover:bg-yellow">
+                  Create Account
+                </button>
+                <button className="bg-purple lg:bg-yellow py-2 px-4 rounded">
+                  Sign in
+                </button>
+              </div>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

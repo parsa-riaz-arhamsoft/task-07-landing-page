@@ -20,7 +20,7 @@
   background-image: url("./asserts//hero//brands-mask.png");
   background-repeat: no-repeat;
   object-fit: contain;
-  background-position: right;
+  background-position: top right;
 }
 
 .drop-shadow {
@@ -31,4 +31,20 @@
   background: transparent url("./asserts/hero/brands-LG.png") 0% 0% no-repeat
     padding-box;
 }
+.card-shadow{
+  box-shadow: 0px 0px 20px #0000001A;
+}
+.reviews-bg{
+  background-image: url("./asserts/reviews/mask-bg.svg");
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: absolute;
+  top:0;
+  right:0
+}
 
+@media screen and (max-width: 500px) {
+  .brands-mask {
+    background-position: top left;
+  }
+}

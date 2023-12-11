@@ -1,7 +1,9 @@
 import "./App.css";
 import Aboutus from "./components/Aboutus/Aboutus";
+import Benefits from "./components/Benefits/Benefits";
 import Header from "./components/Head/Header";
 import Hero from "./components/Hero/Hero";
+import Reviews from "./components/Reviews/Reviews";
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <Header />
       <Hero />
       <Aboutus />
+      <Benefits />
+      <Reviews/>
     </div>
   );
 };
