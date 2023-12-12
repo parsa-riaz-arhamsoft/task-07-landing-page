@@ -65,9 +65,9 @@ const Reviews = () => {
      }
    ]
   return (
-    <div className="py-[4%] w-full h-full  overflow-hidden flex justify-center items-center">
-      <div className="relative border   border-red-800 w-[85%] flex flex-col md:flex-row">
-        <div className="border  border-pink-800 font-f-outfit z-10">
+    <div className="py-[4%] w-full h-full flex justify-center items-center">
+      <div className="w-[85%] flex flex-col md:flex-row ">
+        <div className="font-f-outfit z-10 w-[21%]">
           <div>
             <h2 className="text-base text-yellow">Reviews</h2>
             <p className="text-5xl font-thin whitespace-nowrap">Clients Words</p>
@@ -83,11 +83,11 @@ const Reviews = () => {
             <button className="border border-light-gray text-black font-semibold px-8 py-4 rounded hover:bg-yellow hover:border-yellow">Check All Reviews</button>
           </div>
         </div>
-        <div className="bg-extl-gray  absolute left-[19%] top-0 bottom-0 right-0 border border-yellow rounded-[80px] reviews-bg">
-          <div>
-            <p>Phasellus mollis tincidunt semper. Curabitur pharetra tortor nisi, ut consectetur risus faucibus in. Donec ac tortor luctus, condimentum neque.</p>
+        
+        <div className="relative bg-extl-gray w-[85%] border border-yellow rounded-[80px] overflow-visible">
+          <div className=" border border-red-800 h-full w-full reviews-bg">
+            hello
           </div>
-          <div></div>
         </div>
       </div>
     </div>

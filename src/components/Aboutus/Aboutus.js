@@ -25,7 +25,7 @@ const Aboutus = () => {
             at odio. Etiam a blandit neque.
           </p>
           <div className="flex justify-center md:justify-start gap-2">
-            <button className="bg-yellow px-4 py-2 lg:px-8 lg:py-4 rounded font-semibold hover:bg-white border hover:border-light-gray md:whitespace-nowrap">Contact with Experts</button>
+            <button className="bg-yellow px-4 py-2 lg:px-8 lg:py-4 rounded font-semibold hover:bg-white border border-yellow hover:border-light-gray md:whitespace-nowrap">Contact with Experts</button>
             <button className=" border border-light-gray px-4 lg:px-8 rounded font-semibold md:whitespace-nowrap hover:bg-yellow hover:border-0">Join us Today</button>
           </div>
         </div>

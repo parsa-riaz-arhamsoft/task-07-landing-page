@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="w-full h-full bg-gradient">
-      <nav className="text-white z-10 fixed top-0 w-full bg-white shadow-sm flex gradient h-[3.5rem] lg:h-[5rem] 2xl:h-[6rem] 2xl:px-4 justify-center items-center">
+      <nav className="text-white z-50 fixed top-0 w-full bg-white shadow-sm flex gradient h-[3.5rem] lg:h-[5rem] 2xl:h-[6rem] 2xl:px-4 justify-center items-center">
         <div className="flex w-[90%] justify-between items-center">
           <div className="h-[80%] w-[50%] md:w-[30%] lg:w-auto flex justify-between items-center">
             <img

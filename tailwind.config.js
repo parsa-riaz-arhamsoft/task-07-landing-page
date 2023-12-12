@@ -16,7 +16,9 @@ module.exports = {
         "purple":"rgb(91, 25, 167)",
         "light-gray":"#707070",
         "gray":"#DDDDDD",
-        "extl-gray":"#FAF9FE"
+        "extl-gray":"#FAF9FE",
+        "plan-gray":"#F3F3F3",
+        "sky":"#0088C1"
       },
      
     },
