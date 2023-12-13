@@ -11,7 +11,7 @@ const Features = () => {
           Vivamus eget aliquam dui. Integer eu arcu vel arcu suscipit ultrices
           quis non mauris.
         </p>
-        <ul className="p-3 border rounded-full w-100 h-auto flex justify-evenly items-center text-sm">
+        <ul className="p-3 border rounded-0 lg:rounded-full w-100 h-[20rem] lg:h-auto flex flex-col lg:flex-row justify-evenly items-center text-sm">
           <li className="bg-d-blue text-white py-3 px-5 rounded-full">
             Unlimited User
           </li>
@@ -34,8 +34,8 @@ const Features = () => {
             Check-in & check-out Features
           </li>
         </ul>
-        <div className="flex gap-2 text-start mt-[4%]">
-          <div className="w-full lg:w-1/2 flex flex-col justify-evenly">
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-start gap-2 text-center lg:text-start mt-[4%]">
+          <div className="w-100 lg:w-1/2 flex flex-col justify-center lg:justify-evenly">
             <h3 className="text-2xl lg:text-4xl font-semibold text-t-blue">
               Unlimited Users
             </h3>

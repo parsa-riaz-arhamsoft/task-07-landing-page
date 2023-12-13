@@ -18,7 +18,7 @@ const PricingComparision = () => {
             you’ll get quality, flexibility, and security.
           </p>
         </div>
-        <div className="w-full flex flex-wrap gap-2 justify-between text-black">
+        <div className="w-full flex flex-wrap gap-2 justify-center items-center lg:justify-between text-black">
           <div className="w-[22rem] h-[32rem] py-[2%] bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
             <div className="h-[40%] grid justify-items-stretch pt-3">
               <h3 className="font-semibold text-t-blue text-3xl">

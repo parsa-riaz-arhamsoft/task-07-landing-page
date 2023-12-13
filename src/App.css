@@ -38,15 +38,14 @@
   background-image: url("./asserts/reviews/mask-bg.svg");
   background-repeat: no-repeat;
   object-fit: contain;
-  background-position: left;
+  background-position: -70% 25%;
 }
 .features-bg {
   background-image: url("./asserts/features/bg-mask.png");
   background-repeat: no-repeat;
   object-fit: contain;
-  background-position: left;
+  background-position: right;
 }
-
 .pricing-bg {
   background-image: url("./asserts/pricing/bg-mask.png");
   background-repeat: no-repeat;
@@ -67,8 +66,20 @@
 .faqs-bg {
   background-image: url("./asserts/faqs/bg-mask.png");
   background-repeat: no-repeat;
-  object-fit: contain;
-  background-position: top left;
+  object-fit: fixed;
+  background-position-x: 85px;
+  background-position-y: 22px;
+}
+.contact-shadow{
+ box-shadow: 0px 0px 26px #0000001A;;
+}
+.review-shadow{
+    box-shadow: 0px 0px 50px #0000001A;;
+}
+.footer-bg {
+  background-image: url("./asserts/footer/footer-bg.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 @media screen and (max-width: 500px) {
   .brands-mask {

@@ -4,7 +4,7 @@ import bgAnimation from "../../animations/64804.json";
 const SubscriptionPlans = () => {
   return (
     <div className="w-ful h-full font-f-outfit overflow-hidden grid justify-items-center align-middle">
-      <div className="w-[90%] font-thin h-full grid justify-items-center align-middle gap-8 text-white ">
+      <div className="w-[90%] font-thin h-full grid text-center justify-items-center align-middle gap-8 text-white ">
         <h2 className="text-4xl lg:text-6xl font-semibold">
           Subscription Plans
         </h2>
@@ -13,7 +13,7 @@ const SubscriptionPlans = () => {
           calendar year. Late Subscription will be prorated within the first
           year.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-col md:flex-row justify-center lg:justify-start md:flex-wrap gap-2">
           <div className="subs-card-gradient overflow-hidden rounded-[20px] h-[28rem] w-[12rem]">
             <div className="bg-sky leading-[15px] text-sm uppercase h-[30%] flex justify-center items-center text-center  flex-col font-thin">
               <p>Upto</p>

@@ -3,6 +3,7 @@ import Aboutus from "./components/Aboutus/Aboutus";
 import Benefits from "./components/Benefits/Benefits";
 import FAQs from "./components/FAQs/FAQs";
 import Features from "./components/Features/Features";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Head/Header";
 import Hero from "./components/Hero/Hero";
 import Pricing from "./components/Pricing/Pricing";
@@ -19,6 +20,7 @@ const App = () => {
       <Features/>
       <Pricing/>
       <FAQs/>
+      <Footer/>
     </div>
   );
 };
