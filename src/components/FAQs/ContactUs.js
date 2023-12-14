@@ -3,8 +3,8 @@ import emailIcon from "../../asserts/contactus/email-icon.svg";
 
 const ContactUs = () => {
   return (
-    <div className="h-[25rem] w-full flex justify-center lg:justify-end font-f-outfit">
-      <div className="w-[80%] h-full box-border contact-shadow rounded-[31px] p-[8%]">
+    <div className="h-[25rem] w-full flex justify-center lg:justify-end font-f-outfit ">
+      <div className="w-full md:w-[60%] lg:w-[90%] xl:w-[80%] h-full box-border contact-shadow rounded-[31px] p-[8%] bg-white">
         <h3 className="font-semibold h-[20%] text-lg">Contact Us</h3>
         <div className="flex flex-col h-[80%] justify-evenly gap-2">
           <div className="h-[20%] w-full relative">
@@ -24,7 +24,7 @@ const ContactUs = () => {
             <img src={emailIcon} alt="user" className="absolute top-4 left-2" />
           </div>
           <textarea
-            className="border border-gray text-sm py-2 bg-extl-gray h-[40%] rounded focus:outline-none px-2 focus:ring-1 focus:ring-yellow focus:border-0"
+            className="border border-gray resize-none text-sm py-2 bg-extl-gray h-[40%] rounded focus:outline-none px-2 focus:ring-1 focus:ring-yellow focus:border-0"
             placeholder="Your message"
           ></textarea>
           <div className="h-[20%] w-full flex justify-end align-middle">

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import star from "../../asserts/hero/star.svg";
 import arrowIcon from "../../asserts/reviews/arrow-icon.png";
 
-const ReviewCard = ({ review, val, index }) => {
+const ReviewCard = ({ review, active, index }) => {
     
   const [isShow, setIseShow] = useState(false);
 
@@ -11,13 +11,13 @@ const ReviewCard = ({ review, val, index }) => {
   };
 
   useEffect(() => {
-    if (val === index) setIseShow(true);
+    if (active === index) setIseShow(true);
   }, []);
 
   return (
     <div
       key={index}
-      className="w-[20rem] h-full bg-white  rounded-[60px] overflow-visible review-shadow p-2"
+      className="w-full lg:w-[17rem] xl:w-[19rem] h-full bg-white  rounded-[60px] overflow-visible shadow-lg review-shadow p-2"
       onMouseEnter={handleIsShow}
       onMouseLeave={handleIsShow}
     >
@@ -28,7 +28,7 @@ const ReviewCard = ({ review, val, index }) => {
           className="h-auto w-[40%] object-contain"
         />
         <span className="font-semibold">{review.name}</span>
-        <p className="text-yellow font-light text-sm">review.writtenDate</p>
+        <p className="text-yellow font-light text-sm">{review.writtenDate}</p>
         <span className="flex gap-1 h-auto w-[50%]">
           <img
             src={star}

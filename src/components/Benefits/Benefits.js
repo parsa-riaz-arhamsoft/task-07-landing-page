@@ -64,14 +64,14 @@ const Benefits = () => {
   ];
   return (
     <div className="py-[3%] h-full w-full overflow-hidden flex flex-col justify-center items-center text-center gap-8 font-f-outfit">
-      <h2 className="text-4xl lg:text-6xl font-semibold text-t-blue">
+      <h2 className="text-4xl lg:text-6xl 2xl:text-7xl font-semibold text-t-blue">
         Benefits
       </h2>
-      <p>
+      <p className="text-lg">
         Yovamus eget aliquam dui. Integer eu arcu vel arcu suscipit ultrices
         quis non mauris.
       </p>
-      <div className="w-[85%] h-auto my-5 gap-y-4 flex gap-4 justify-center lg:justify-between items-center flex-wrap">
+      <div className="w-[85%] h-auto my-5 gap-y-4 flex gap-4 justify-center lg:justify-start xl:justify-between items-center flex-wrap">
         {data.map((card, index) => {
           return (
             <div className="relative card-shadow w-[90%] md:w-[48%] lg:w-[32%] py-2 xl:w-[23%] min-h-[19.5rem] max-h-auto flex justify-center items-center rounded-[20px]">

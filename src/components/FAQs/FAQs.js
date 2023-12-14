@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Accordion from "./Accordion";
 import ContactUs from "./ContactUs";
 
@@ -35,24 +36,47 @@ const FAQs = () => {
         "Staying on top of your assets saves you time and money. It’s harder to lose or misplace assets when your system tracks every asset’s history and exact location. There’s a huge opportunity cost to finding your lost assets. Without a system in place, you lose productivity, too.",
     },
   ];
+  const [isActive, setIsActive] = useState(0);
+
+  const handleToggleActive = (index) => {
+    if (isActive === index) {
+      setIsActive(null);
+    } else {
+      setIsActive(index);
+    }
+  };
+
   return (
-    <div className="faqs-bg h-full w-full py-[6%] overflow-hidden flex justify-center items-center">
+    <div className="relative h-full w-full overflow-hidden flex justify-end">
+      <div className="absolute h-[100%] bg-extl-gray w-[30%] -z-30"></div>
+      <div className="absolute right-[20%] skew-x-[-20deg] h-[100%] bg-extl-gray w-[40%] -z-30"></div>
+      <div className="relative faqs-bg h-full w-full  py-[6%] overflow-hidden flex justify-center items-center">
       <div className="w-[85%]">
         <h2 className="text-3xl font-bold my-[5%]">
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col lg:flex-row h-full">
           <div className="w-full lg:w-[65%] h-full">
-            <div className="w-full h-full z-10">
+            <div className="w-full h-full">
               {list.map((item, index) => {
-                return <Accordion key={index} datas={item} />;
+                return (
+                  <div className="z-10 py-2">
+                    <Accordion
+                      index={index}
+                      item={item}
+                      isActive={isActive}
+                      handleToggleActive={handleToggleActive}
+                    />
+                  </div>
+                );
               })}
             </div>
           </div>
-          <div className="w-full  lg:w-[35%]">
-           <ContactUs/>
+          <div className="w-full md:my-[4%] lg:my-0 lg:w-[35%]">
+            <ContactUs />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

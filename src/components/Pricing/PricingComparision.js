@@ -2,7 +2,7 @@ import logo from "../../asserts/logo-navy.png";
 const PricingComparision = () => {
   return (
     <div className="w-full h-full overflow-hidden flex justify-center items-center">
-      <div className="w-[85%] flex flex-col gap-10 justify-center items-center text-white text-center font-f-outfit">
+      <div className="w-[85%] lg:w-[95%] xl:w-[85%] flex flex-col gap-10 justify-center items-center text-white text-center font-f-outfit">
         <div className="grid  gap-8 w-[80%] font-thin">
           <h2 className="text-4xl lg:text-6xl font-semibold">
             Pricing Comparison
@@ -19,7 +19,7 @@ const PricingComparision = () => {
           </p>
         </div>
         <div className="w-full flex flex-wrap gap-2 justify-center items-center lg:justify-between text-black">
-          <div className="w-[22rem] h-[32rem] py-[2%] bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
+          <div className="w-[22rem] lg:w-[19rem] xl:w-[24rem] h-[32rem] py-[6%] lg:py-[2%] bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
             <div className="h-[40%] grid justify-items-stretch pt-3">
               <h3 className="font-semibold text-t-blue text-3xl">
                 Competitor#1
@@ -48,7 +48,7 @@ const PricingComparision = () => {
             </div>
           </div>
 
-          <div className="w-[22rem] h-[32rem] py-4 bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
+          <div className="w-[22rem] lg:w-[19rem] xl:w-[24rem] h-[32rem] py-4 bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
             <div className="h-[40%] grid justify-items-stretch align-middle ">
               <div className="h-full w-full flex justify-center">
                 <img
@@ -76,17 +76,19 @@ const PricingComparision = () => {
                   </div>
                 </div>
                 <p className="font-bold text-yellow">FREE* /for 250 Assets</p>
-                <p className="text-xs font-thin">*See Subscription Plans for details</p>
+                <p className="text-xs font-thin">
+                  *See Subscription Plans for details
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="w-[22rem] h-[32rem] py-[2%] bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
+          <div className="w-[22rem] lg:w-[1rem] xl:w-[24rem]  h-[32rem] py-[6%] lg:py-[2%] bg-white rounded-[50px]  justify-items-center align-middle text-center border border-green-900">
             <div className="h-[40%] grid justify-items-stretch pt-3">
               <h3 className="font-semibold text-t-blue text-3xl">
                 Competitor #2
               </h3>
-             
+
               <div className="text-center text-sm">
                 <p>Smartphone Compatible</p>
                 <p>($295/device)</p>
@@ -110,7 +112,6 @@ const PricingComparision = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

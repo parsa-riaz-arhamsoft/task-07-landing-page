@@ -13,12 +13,15 @@ const SubscriptionPlans = () => {
           calendar year. Late Subscription will be prorated within the first
           year.
         </p>
-        <div className="flex flex-col md:flex-row justify-center lg:justify-start md:flex-wrap gap-2">
+        <div className="flex flex-col md:flex-row justify-center xl:justify-start md:flex-wrap gap-2">
           <div className="subs-card-gradient overflow-hidden rounded-[20px] h-[28rem] w-[12rem]">
-            <div className="bg-sky leading-[15px] text-sm uppercase h-[30%] flex justify-center items-center text-center  flex-col font-thin">
+            <div className="bg-sky relative h-[30%] leading-[15px] flex justify-center items-center text-sm uppercase font-thin">
+            <div className="bg-sky h-[80%] w-full z-30 flex justify-center items-center text-center  flex-col">
               <p>Upto</p>
               <p className="text-3xl font-semibold">300</p>
               <p>Assets</p>
+            </div>
+            <div className="absolute z-10 bottom-[-23%] bg-sky w-full skew-y-[18deg] h-[45%]"></div>
             </div>
             <div className="h-[50%] text-sm  flex gap-2 justify-center items-center flex-col">
               <p>Subscription Plan</p>

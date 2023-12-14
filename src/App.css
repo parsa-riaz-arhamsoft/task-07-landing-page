@@ -38,7 +38,7 @@
   background-image: url("./asserts/reviews/mask-bg.svg");
   background-repeat: no-repeat;
   object-fit: contain;
-  background-position: -70% 25%;
+  background-position: -10% 25%;
 }
 .features-bg {
   background-image: url("./asserts/features/bg-mask.png");
@@ -67,22 +67,42 @@
   background-image: url("./asserts/faqs/bg-mask.png");
   background-repeat: no-repeat;
   object-fit: fixed;
-  background-position-x: 85px;
+  background-position-x: 60px;
   background-position-y: 22px;
+  background-size: 25%;
 }
-.contact-shadow{
- box-shadow: 0px 0px 26px #0000001A;;
+.contact-shadow {
+  box-shadow: 0px 0px 26px #0000001a;
 }
-.review-shadow{
-    box-shadow: 0px 0px 50px #0000001A;;
+.review-shadow {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 15px #0000001a;
 }
 .footer-bg {
   background-image: url("./asserts/footer/footer-bg.png");
   background-repeat: no-repeat;
   object-fit: cover;
 }
+
+.swiper-pagination-bullet {
+  height: 20px !important;
+  width: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+  color: #000000;
+}
+.swiper-slide {
+  background: transparent;
+}
 @media screen and (max-width: 500px) {
   .brands-mask {
     background-position: top left;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .reviews-bg {
+    background-position: -130% 25%;
   }
 }

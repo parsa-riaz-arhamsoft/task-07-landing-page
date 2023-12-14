@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="h-auto w-full overflow-hidden drop-shadow">
       <div className="h-auto w-full md:h-[28rem] lg:h-[35rem] xl:h-[40rem] 2xl:h-[60rem] gradient text-white flex justify-center items-center">
         <div className="w-[100%] h-[100%] flex flex-col md:flex-row items-center justify-center bg-mask">
-          <div className="h-[100%] w-[85%] mt-[8rem] md:mt-0 flex flex-col-reverse md:flex-row items-center justify-between font-f-outfit text-center md:text-start">
+          <div className="h-[100%] w-[85%] lg:w-[90%] xl:w-[85%] mt-[8rem] md:mt-0 flex flex-col-reverse md:flex-row items-center justify-between font-f-outfit text-center md:text-start">
             <div className="h-[70%] pt-[20%] md:pt-0 w-100 flex justify-center flex-col">
               <div className="leading-[40px] lg:leading-[65px] 2xl:leading-[100px] py-[8%]">
                 <p className="text-[1.5rem] lg:text-[2.8rem] xl:text-[2.8rem] 2xl:text-[5rem] text-yellow font-thin uppercase">
@@ -58,7 +58,7 @@ const Hero = () => {
                 <p>Rated 5-Star by Independent Users</p>
               </div>
             </div>
-            <div className="py-4 lg:h-[70%] h-[31%] md:h-auto absolute top-10  md:static">
+            <div className="py-4 lg:h-[70%] h-[27%] md:h-auto absolute top-10  md:static">
               <img
                 src={doubleArrows}
                 alt="two arrows showing here"

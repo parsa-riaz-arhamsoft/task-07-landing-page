@@ -7,7 +7,7 @@ import waste from "../../asserts/hero/brands-waste.png";
 const Brands = () => {
   return (
     <div className="py-8 md:py-2 h-auto text-center flex justify-center items-center md:text-start font-f-outfit">
-     <div className="w-[93%]">
+     <div className=" lg:w-100 xl:w-[93%]">
       <p className="py-2 font-light">Who endorse our work</p>
       <div className="flex flex-col md:flex-row  gap-3 h-[60%] items-center">
         <h2 className="font-semibold text-[2rem] whitespace-nowrap lg:text-[3rem]">

@@ -8,7 +8,7 @@ import pinterest from "../../asserts/footer/pinterest-icon.png"
 const Footer = () => {
   return (
 <div className="w-full footer-bg h-[18rem] overflow-hidden bg-d-blue flex justify-center items-center">
-<div className="w-[80%] md:w-[30%] lg:w-[20%] h-[50%] font-f-outfit text-white flex flex-col justify-between">
+<div className="w-[80%] md:w-[30%] xl:w-[20%] h-[50%] font-f-outfit text-white flex flex-col justify-between">
 <img src={logo} alt="logo here" className="px-4"/>
 <p className="text-sm lg:text-base">© 2023 All Rights Reserved AssetRack</p>
 <div className="w-full flex justify-evenly h-[25%]">
