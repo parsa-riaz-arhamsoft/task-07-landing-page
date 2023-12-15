@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
-import star from "../../asserts/hero/star.svg";
-import doubleArrows from "../../asserts/hero/double-arrows.svg";
-import roketBg from "../../asserts/hero/roket-bg.png";
-import rocket from "../../animations/Rocket.json";
-import report from "../../animations/report.json";
+import star from "../../assets/hero/star.svg";
+import doubleArrows from "../../assets/hero/double-arrows.svg";
+import roketBg from "../../assets/hero/roket-bg.png";
+import rocket from "../../assets/animations/Rocket.json";
+import report from "../../assets/animations/report.json";
 import Brands from "./Brands";
 
 const Hero = () => {

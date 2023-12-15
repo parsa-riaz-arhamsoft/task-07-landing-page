@@ -10,14 +10,14 @@
 }
 
 .bg-mask {
-  background-image: url("./asserts//hero/bg-mask.svg");
+  background-image: url("./assets/hero/bg-mask.svg");
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: right;
 }
 
 .brands-mask {
-  background-image: url("./asserts//hero//brands-mask.png");
+  background-image: url("./assets/hero/brands-mask.png");
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: top right;
@@ -28,26 +28,31 @@
 }
 
 .transparent-amazon {
-  background: transparent url("./asserts/hero/brands-LG.png") 0% 0% no-repeat
+  background: transparent url("./assets/hero/brands-LG.png") 0% 0% no-repeat
     padding-box;
 }
+
 .card-shadow {
   box-shadow: 0px 0px 20px #0000001a;
 }
+
 .reviews-bg {
-  background-image: url("./asserts/reviews/mask-bg.svg");
+  background-image: url("./assets/reviews/mask-bg.svg");
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: -10% 25%;
 }
+
 .features-bg {
-  background-image: url("./asserts/features/bg-mask.png");
+  background-image: url("./assets/features/bg-mask.png");
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: right;
+  background-size: cover;
 }
+
 .pricing-bg {
-  background-image: url("./asserts/pricing/bg-mask.png");
+  background-image: url("./assets/pricing/bg-mask.png");
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: top center;
@@ -58,28 +63,33 @@
     0% no-repeat padding-box;
   box-shadow: 0px 0px 26px #00000019;
 }
+
 .subs-card-sky {
   background: #0088c1 0% 0% no-repeat padding-box;
   clip-path: polygon(100% 0, 0 30%, 100% 100%);
   transform: rotateX(180deg);
 }
+
 .faqs-bg {
-  background-image: url("./asserts/faqs/bg-mask.png");
+  background-image: url("./assets/faqs/bg-mask.png");
   background-repeat: no-repeat;
   object-fit: fixed;
   background-position-x: 60px;
   background-position-y: 22px;
   background-size: 25%;
 }
+
 .contact-shadow {
   box-shadow: 0px 0px 26px #0000001a;
 }
+
 .review-shadow {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 15px #0000001a;
 }
+
 .footer-bg {
-  background-image: url("./asserts/footer/footer-bg.png");
+  background-image: url("./assets/footer/footer-bg.png");
   background-repeat: no-repeat;
   object-fit: cover;
 }
@@ -88,21 +98,50 @@
   height: 20px !important;
   width: 20px !important;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #000000 !important;
   color: #000000;
 }
+
 .swiper-slide {
   background: transparent;
 }
+
 @media screen and (max-width: 500px) {
   .brands-mask {
     background-position: top left;
   }
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width: 1200px) {
   .reviews-bg {
-    background-position: -130% 25%;
+    background-position: -140% 25%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .reviews-bg {
+    background-position: -200% 25%;
+  }
+}
+
+@media screen and (min-width: 1470px) {
+  .reviews-bg {
+    background-position: -1400% 30%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .reviews-bg {
+    background-position: 140% 30%;
+  }
+
+  .features-bg {
+    background-image: url("./assets/features/bg-mask.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
   }
 }

@@ -2,22 +2,25 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Accordion = ({ index, item, handleToggleActive, isActive }) => {
-  
   return (
-    <div className={`${isActive===index?"shadow-sm":"shadow-md"} h-full w-full overflow-hidden  border border-l-0 border-extl-gray bg-white`}>
+    <div
+      className={`${
+        isActive === index ? "shadow-sm" : "shadow-md"
+      } 2xl:text-2xl h-full w-full overflow-hidden  border border-l-0 border-extl-gray bg-white`}
+    >
       <div
         className={`${
           isActive === index ? "border-yellow" : "border-gray"
         } px-2 border-l-4 border-r-1 border-b-1 border-t-1`}
       >
         <div
-          onClick={()=>handleToggleActive(index)}
+          onClick={() => handleToggleActive(index)}
           className="flex justify-between items-center cursor-pointer"
         >
           <div
             className={`${
               isActive === index ? "text-t-blue font-semibold" : "text-black"
-            } p-2`}
+            } p-2 2xl:p-4`}
           >
             {item.question}
           </div>

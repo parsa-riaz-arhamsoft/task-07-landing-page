@@ -1,20 +1,20 @@
 import "./App.css";
-import Aboutus from "./components/Aboutus/Aboutus";
-import Benefits from "./components/Benefits/Benefits";
-import FAQs from "./components/FAQs/FAQs";
-import Features from "./components/Features/Features";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Head/Header";
-import Hero from "./components/Hero/Hero";
-import Pricing from "./components/Pricing/Pricing";
-import Reviews from "./components/Reviews/Reviews";
+import AboutUs from "./components/about-us/AboutUs.js";
+import Benefits from "./components/benefits/Benefits.js";
+import FAQs from "./components/faqs/FAQs.js";
+import Features from "./components/features/Features.js";
+import Footer from "./components/footer/Footer.js";
+import Header from "./components/head/Header.js";
+import Hero from "./components/hero/Hero.js";
+import Pricing from "./components/pricing/Pricing.js";
+import Reviews from "./components/reviews/Reviews.js";
 
 const App = () => {
   return (
     <div className="m-0 p-0">
       <Header />
       <Hero />
-      <Aboutus />
+      <AboutUs />
       <Benefits />
       <Reviews/>
       <Features/>
