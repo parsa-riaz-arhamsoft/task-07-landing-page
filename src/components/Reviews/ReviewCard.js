@@ -68,7 +68,7 @@ const ReviewCard = ({ review, active, index, handleActive }) => {
             className={`font-light text-sm 2xl:text-base ${
               active === index
                 ? "translate-y-0 -translate-x-0 opacity-100 transition duration-1000"
-                : "opacity-0"
+                : "opacity-0 -translate-x-20 translate-y-20"
             }`}
           >
             {review.review}
@@ -77,7 +77,7 @@ const ReviewCard = ({ review, active, index, handleActive }) => {
             className={`h-[80%] w-[80%] py-4 flex justify-end ${
               active === index
                 ? "translate-x-0 opacity-100 transition duration-1000"
-                : "opacity-0"
+                : "opacity-0 translate-x-20"
             }`}
           >
             <img
