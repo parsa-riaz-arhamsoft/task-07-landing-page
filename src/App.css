@@ -95,8 +95,12 @@
 }
 
 .swiper-pagination-bullet {
-  height: 17px !important;
-  width: 17px !important;
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.swiper-pagination-bullet-hover {
+  cursor: pointer !important;
 }
 
 .swiper-pagination-bullet-active {
